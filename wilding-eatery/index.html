@@ -51,14 +51,14 @@ table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0
 @media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}}
 
 /* 3asy-protect */
-.preview-mark{position:fixed;right:max(.6rem,env(safe-area-inset-right,0px));bottom:max(.6rem,env(safe-area-inset-bottom,0px));z-index:25;margin:0;padding:.32rem .7rem;border-radius:999px;background:var(--ink,#1a1a1a);color:#fff;font-family:inherit;font-size:.68rem;font-weight:500;letter-spacing:.01em;line-height:1.3;opacity:.55;pointer-events:none;max-width:min(24rem,calc(100vw - 1.4rem));white-space:nowrap}
-@media(max-width:420px){.preview-mark{white-space:normal;text-align:right;font-size:.62rem;padding:.28rem .6rem;line-height:1.35}}
-.ph::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-size:clamp(.7rem,2.2vw,1rem);font-weight:600;letter-spacing:.06em;white-space:nowrap;opacity:.18;pointer-events:none;z-index:2;color:var(--ink,#1a1a1a)}
-.ph.vid::after{color:#fff;opacity:.2}
-.rights{margin:.75rem 0 2.2rem}
+.concept{display:flex;flex-direction:column;align-items:center;gap:.12rem;line-height:1.35}
+.concept .license{opacity:.72;font-size:.72rem;font-weight:500;letter-spacing:.02em}
+@media(max-width:420px){.concept{padding:.5rem .75rem;font-size:.78rem}.concept .license{font-size:.68rem}}
+.ph::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-size:clamp(.75rem,2.2vw,1.05rem);font-weight:600;letter-spacing:.06em;white-space:nowrap;pointer-events:none;z-index:3;color:rgba(255,255,255,.82);text-shadow:0 0 1px rgba(0,0,0,.5),0 1px 8px rgba(0,0,0,.35);opacity:.5}
+.rights{margin:.75rem 0 0}
 </style></head>
 <body>
-<p class="concept">Concept site, not the official site. Made for Wilding Eatery by Ezekiel Luwoye, 3asy Design.</p>
+<p class="concept">Concept site, not the official site. Made for Wilding Eatery by Ezekiel Luwoye, 3asy Design.<span class="license">© 2026 3asy Design · concept preview · not licensed for use</span></p>
 <header class="bar"><b>Wilding Eatery</b><nav><a href="#menu">Menu</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav></header>
 <main>
 <section class="hero" id="top"><div><h1>Coffee, paninis<br>and waffles<br>on Mercery Lane</h1><p>A quirky, dog-friendly café in the heart of Canterbury, steps from the Cathedral, with paninis, Belgian waffles, cakes and hot and cold drinks.</p><a class="btn" href="#menu">See the menu</a><a class="btn alt" href="tel:+441227471025">Call 01227 471025</a></div>
@@ -105,5 +105,4 @@ table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0
  }catch(err){}
 })();
 </script>
-<p class="preview-mark" aria-hidden="true">© 2026 3asy Design · concept preview · not licensed for use</p>
 </body></html>

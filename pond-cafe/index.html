@@ -229,13 +229,13 @@ main, footer, .top { position: relative; }
 }
 
 /* 3asy-protect */
-.preview-mark{position:fixed;right:max(12px,env(safe-area-inset-right,0px));bottom:max(12px,env(safe-area-inset-bottom,0px));z-index:28;margin:0;padding:.32rem .75rem;border-radius:999px;background:rgba(15,47,42,.72);color:var(--reed,#dfe7cc);font-family:var(--body,inherit);font-size:.6875rem;font-weight:500;letter-spacing:.01em;line-height:1.3;opacity:.9;pointer-events:none;max-width:min(24rem,calc(100vw - 24px));white-space:nowrap;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-@media(max-width:420px){.preview-mark{white-space:normal;text-align:right;font-size:.62rem;padding:.28rem .6rem}}
-.hero::after,.walk-stage::before,.plate-stage::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-family:var(--body,inherit);font-size:clamp(.75rem,2vw,1.05rem);font-weight:600;letter-spacing:.08em;white-space:nowrap;opacity:.16;pointer-events:none;z-index:3;color:var(--reed,#dfe7cc)}
+.concept .license{display:block;margin-top:.25rem;opacity:.7;font-size:.75em;font-weight:500;letter-spacing:.02em}
+.hero::after,.walk-stage::before,.plate-stage::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-family:var(--body,inherit);font-size:clamp(.8rem,2vw,1.1rem);font-weight:600;letter-spacing:.08em;white-space:nowrap;pointer-events:none;z-index:3;color:rgba(255,255,255,.82);text-shadow:0 0 1px rgba(0,0,0,.45),0 1px 8px rgba(0,0,0,.3);opacity:.45}
 .hero{position:relative}
-.hero::after{top:28%;color:var(--pond,#0f2f2a);opacity:.14}
+.hero::after{top:28%;color:var(--pond,#0f2f2a);text-shadow:0 0 1px rgba(223,231,204,.4);opacity:.22}
 .plate-stage{position:relative}
-.foot-below{padding-bottom:2.4rem}.rights{grid-column:1/-1;margin:.4rem 0 0;opacity:.9;font-size:var(--s0,.75rem)}
+.foot-below{padding-bottom:0}
+.rights{grid-column:1/-1;margin:.4rem 0 0;opacity:.9;font-size:var(--s0,.75rem)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"The Pond Cafe","telephone":"+441622357880","servesCuisine":"Breakfast and brunch","address":{"@type":"PostalAddress","streetAddress":"Tyland Barn, Chatham Road","addressLocality":"Sandling, Maidstone","postalCode":"ME14 3BD","addressCountry":"GB"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"16:00"},"hasMenu":"#menu"}
@@ -256,7 +256,7 @@ main, footer, .top { position: relative; }
 <main id="top">
   <section class="hero" aria-label="The Pond Cafe">
     <div class="stage">
-      <p class="concept">A website concept made for The Pond Cafe by Ezekiel Luwoye, 3asy Design. This is not the café’s official site.</p>
+      <p class="concept">A website concept made for The Pond Cafe by Ezekiel Luwoye, 3asy Design. This is not the café’s official site.<span class="license">© 2026 3asy Design · concept preview · not licensed for use</span></p>
       <h1 class="mark" aria-label="The Pond Cafe at Tyland Barn"><span class="inner" aria-hidden="true"><span class="line"><span>The</span><i class="base"></i></span> <span class="line"><span>Pond</span><i class="base"></i></span></span></h1>
       <div class="hero-below">
         <p><strong>Cafe at Tyland Barn.</strong> Cooked-to-order breakfasts and lunches in a 17th-century oak barn at Kent Wildlife Trust, Sandling.</p>
@@ -768,6 +768,5 @@ main, footer, .top { position: relative; }
   lazy.forEach((el) => bgIO.observe(el));
 })();
 </script>
-<p class="preview-mark" aria-hidden="true">© 2026 3asy Design · concept preview · not licensed for use</p>
 </body>
 </html>
