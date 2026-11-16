@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leah&#x27;s Bistro: a website concept by Ezekiel Luwoye, 3asy Design</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A website concept made for Leah&#x27;s Bistro by Ezekiel Luwoye, 3asy Design. Not the official site.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF5EC;--ink:#2A1B14;--accent:#B4472E;--accent2:#E8C9A0;--soft:#F1E4D2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.5}
+a{color:inherit}
+.concept{position:sticky;top:0;z-index:20;margin:0;padding:.55rem 1rem;background:var(--ink);color:#fff;font-size:.82rem;text-align:center}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,5vw,4rem)}
+.bar b{font-weight:800;letter-spacing:-.01em;font-size:1.1rem}
+.bar nav a{margin-left:1.2rem;text-decoration:none;font-size:.95rem;opacity:.85}
+.hero{padding:clamp(2rem,7vw,6rem) clamp(1rem,5vw,4rem) clamp(2rem,5vw,4rem);display:grid;gap:2rem;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2.6rem,8vw,6.5rem);line-height:.95;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.03em}
+.hero p{font-size:1.15rem;max-width:34rem;margin:0 0 1.6rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:.6rem}
+.ph{position:relative;border-radius:24px;min-height:260px;background:linear-gradient(135deg,var(--accent2),var(--soft));display:flex;align-items:flex-end;padding:1rem;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.55),transparent 55%)}
+.ph span{position:relative;font-size:.8rem;opacity:.75;background:rgba(255,255,255,.7);padding:.25rem .6rem;border-radius:999px}
+.hero .ph{min-height:clamp(260px,40vw,460px)}
+section{padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,4rem)}
+h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.02em}
+.menu{background:var(--soft)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.tab{border:2px solid var(--ink);background:transparent;color:var(--ink);padding:.55rem 1rem;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:#fff}
+.panel[hidden]{display:none}
+.group h3{margin:1.5rem 0 .2rem;font-size:1.4rem}.group>p{margin:0 0 .8rem;opacity:.75;font-size:.95rem}
+.rows{list-style:none;padding:0;margin:0;max-width:60rem}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:.1rem 1rem;padding:.8rem 0;border-bottom:1px solid rgba(0,0,0,.12)}
+.rows .dish{font-weight:700}.rows .price{font-weight:800;color:var(--accent)}.rows .desc{grid-column:1/-1;opacity:.8;font-size:.95rem}
+.note{max-width:60rem;font-size:.92rem;opacity:.8;margin-top:1.5rem}
+.reviews{display:grid;gap:2rem;grid-template-columns:.8fr 1.2fr}
+.score{font-size:clamp(4rem,12vw,8rem);font-weight:800;line-height:.9;color:var(--accent)}
+blockquote{margin:0 0 1.6rem;font-size:1.25rem;line-height:1.35}
+blockquote cite{display:block;font-style:normal;font-size:.88rem;opacity:.7;margin-top:.3rem}
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--soft);border-radius:22px;padding:1.6rem}
+.card h3{margin:0 0 .5rem;font-size:1.4rem}.card small{opacity:.65}
+.visit{background:var(--ink);color:#fff}.visit a{color:#fff}
+.visit .grid{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.status{display:inline-block;background:var(--accent2);color:var(--ink);padding:.3rem .8rem;border-radius:999px;font-weight:700;margin-bottom:1rem}
+table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0;font-weight:600}td{padding:.35rem 0}
+.foot{padding:2rem clamp(1rem,5vw,4rem);font-size:.85rem;opacity:.85}
+.foot .legal{max-width:60rem}
+@media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}}
+</style></head>
+<body>
+<p class="concept">Concept site, not the official site. Made for Leah&#x27;s Bistro by Ezekiel Luwoye, 3asy Design.</p>
+<header class="bar"><b>Leah&#x27;s Bistro</b><nav><a href="#menu">Menu</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav></header>
+<main>
+<section class="hero" id="top"><div><h1>Breakfast,<br>brunch and lunch</h1><p>A cosy café-restaurant at 18 High Street with breakfasts, brunches, roasts and Mediterranean touches, open seven days.</p><a class="btn" href="#menu">See the menu</a><a class="btn alt" href="tel:+441622600123">Call 01622 600123</a></div>
+<div class="ph" role="img" aria-label="Placeholder for the café's own photo"><span>Your own photo goes here</span></div></section>
+
+<section class="menu" id="menu"><h2>On the menu</h2>
+<div class="tabs" role="tablist" aria-label="Menu sections"><button class="tab" type="button" role="tab" id="tab0" aria-controls="p0" aria-selected="true">Breakfast</button><button class="tab" type="button" role="tab" id="tab1" aria-controls="p1" aria-selected="false">Lunch and mains</button></div><div class="panel" role="tabpanel" id="p0" aria-labelledby="tab0"><div class="group"><h3>Breakfast</h3><p>All breakfasts come with a slice of toast and use free-range eggs.</p><ul class="rows"><li><span class="dish">Traditional Breakfast</span><span class="price">£13.00</span><span class="desc">2 bacon, sausage, egg, tomatoes, mushrooms, black pudding and beans</span></li><li><span class="dish">Full Breakfast</span><span class="price">£14.50</span><span class="desc">2 bacon, 2 sausages, 2 hash browns, 2 eggs, mushrooms, beans and tomato</span></li><li><span class="dish">Brunch</span><span class="price">£13.00</span><span class="desc">2 bacon, 2 sausages, 2 eggs, sautéed potatoes and beans</span></li><li><span class="dish">Mediterranean Breakfast</span><span class="price">£14.00</span><span class="desc">Halloumi, feta, olives, 2 fried eggs, 2 grilled tomatoes, sourdough and hummus</span></li><li><span class="dish">Leah’s Veggie Breakfast</span><span class="price">£13.00</span><span class="desc">2 poached eggs on sourdough, vegetarian sausage, sautéed mushrooms, bubble &amp; squeak, beans (gluten-free available)</span></li><li><span class="dish">Luke’s Veggie Breakfast</span><span class="price">£14.00</span><span class="desc">Grilled halloumi, sautéed mushrooms, wilted spinach, 2 fried eggs, beans and bubble &amp; squeak (gluten-free available)</span></li><li><span class="dish">Pancakes</span><span class="price">£13.00</span><span class="desc">Served with streaky bacon and maple syrup</span></li></ul></div></div><div class="panel" role="tabpanel" id="p1" aria-labelledby="tab1" hidden><div class="group"><h3>On the menu</h3><p>Prices to be added from the café’s own menu.</p><ul class="rows"><li><span class="dish">Eggs</span><span class="price"></span><span class="desc">Benedict, Royale, Florentine, smoked salmon, avocado and feta, and more</span></li><li><span class="dish">Omelettes</span><span class="price"></span><span class="desc">Spanish, salmon and spinach, cheese onion and tomato, sausage bacon ham and cheese</span></li><li><span class="dish">Salads</span><span class="price"></span><span class="desc">Chicken Caesar, goat’s cheese, Leah’s Greek-style, smoked salmon and prawn, avocado and houmous</span></li><li><span class="dish">Sandwiches</span><span class="price"></span><span class="desc">Tuna melt, brie bacon and cranberry, salmon and cream cheese, chicken and bacon, and more</span></li><li><span class="dish">Main meals</span><span class="price"></span><span class="desc">Scampi and chips, halloumi burger, lamb stew, fish pie, shepherd’s pie, cottage pie, ham eggs and chips</span></li><li><span class="dish">From the grill</span><span class="price"></span><span class="desc">Rib-eye steak, lamb chops, gammon steak</span></li><li><span class="dish">Roast dinner and pasta</span><span class="price"></span><span class="desc">Traditional roast dinners; lasagne, carbonara, spaghetti bolognese</span></li><li><span class="dish">Jacket potatoes</span><span class="price"></span><span class="desc">Vegan chilli, Mediterranean vegetables and houmous, bacon and cheese, tuna melt and more</span></li></ul></div></div>
+<p class="note">Dishes and prices are as listed on Leah&#x27;s Bistro&#x27;s Just Eat menu; the café would confirm every price before launch. There is also a separate vegan menu: ask the team. Cakes, scones and coffee are on the counter.</p></section>
+
+<section class="reviews" id="reviews"><div><h2>What guests say</h2><div class="score">4.5</div><p>out of 5 from 602 Google reviews</p></div>
+<div><blockquote><p>“I’d give it 10 stars if I could, quick service and we came at 3 and they close at 4! Amazing food for the price and it’s such a cute place.”</p><cite>Google review, January 2026</cite></blockquote><blockquote><p>“The service is always excellent, swift and welcoming. The coffee is very good.”</p><cite>Google review, September 2024</cite></blockquote><blockquote><p>“Had a fantastic experience here. The food was great and of good quality. Portions were more than generous.”</p><cite>Google review, March 2024</cite></blockquote></div></section>
+
+<section><div class="cards">
+<div class="card"><h3>Live piano, now and then</h3><p>Two guests mention someone playing the piano by the entrance: “a nice atmosphere”, “very unexpected”. A small thing worth showing on a website.</p><small>Google reviews, 2024 and 2025</small></div>
+<div class="card"><h3>Family friendly</h3><p>Reviews mention generous kids’ roasts, friendly staff who chat to the children and a quick kitchen.</p><small>From Google reviews</small></div>
+<div class="card"><h3>All in one place</h3><p>Menu, opening hours, phone and directions on one page that works on a phone, alongside your Facebook or Instagram.</p><small>What a website adds</small></div></div></section>
+
+<section class="visit" id="visit"><div class="grid"><div><h2>Find us</h2><p class="status" id="status">Mon–Sat 7:30am–4pm, Sun 9am–3:30pm</p>
+<address style="font-style:normal">18 High Street, Maidstone, Kent ME14 1HT</address>
+<p><a href="tel:+441622600123"><b>01622 600123</b></a><br>Email: <a href="mailto:leahsbistro0@gmail.com">leahsbistro0@gmail.com</a></p>
+<a class="btn" style="background:var(--accent2);color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=Leah&#x27;s+Bistro+18+High+Street,+Maidstone,+Kent+ME14+1HT" target="_blank" rel="noopener">Get directions</a></div>
+<div><h2>Opening hours</h2><table><caption class="visually-hidden" style="position:absolute;left:-9999px">Opening hours</caption><tbody><tr><th scope="row">Monday to Saturday</th><td>7:30 to 16:00</td></tr><tr><th scope="row">Sunday</th><td>9:00 to 15:30</td></tr></tbody></table>
+<p class="note" style="opacity:.7">Hours as listed on the business’s Google listing. To be confirmed with the business before launch.</p></div></div></section>
+</main>
+<footer class="foot"><p><b>Leah&#x27;s Bistro</b>, 18 High Street, Maidstone, Kent ME14 1HT</p>
+<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with Leah&#x27;s Bistro. Not affiliated with or endorsed by Leah&#x27;s Bistro. Details are taken from public listings and reviews and have not been confirmed with the business. Photo areas are placeholders: a real site would use the business’s own photographs.</p></footer>
+<script>
+(function(){
+ var tabs=document.querySelectorAll('.tab');
+ tabs.forEach(function(t){t.addEventListener('click',function(){
+  tabs.forEach(function(x){x.setAttribute('aria-selected','false');document.getElementById(x.getAttribute('aria-controls')).hidden=true});
+  t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false})});
+ var H={"0": [540, 930], "1": [450, 960], "2": [450, 960], "3": [450, 960], "4": [450, 960], "5": [450, 960], "6": [450, 960]};
+ try{
+  var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  var g=function(k){return p.filter(function(x){return x.type===k})[0].value};
+  var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')];
+  var m=parseInt(g('hour'))%24*60+parseInt(g('minute'));
+  var r=H[day];var open=false;
+  if(r){if(typeof r[0]==='number')r=[r];r.forEach(function(x){if(m>=x[0]&&m<x[1])open=true})}
+  var s=document.getElementById('status');
+  s.textContent=(open?'Open now':'Closed right now')+' · '+"Mon\u2013Sat 7:30am\u20134pm, Sun 9am\u20133:30pm";
+ }catch(err){}
+})();
+</script>
+</body></html>
