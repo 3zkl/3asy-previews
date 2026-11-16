@@ -227,6 +227,15 @@ main, footer, .top { position: relative; }
   .walk { height: auto; }
   .walk-stage { position: relative; height: 70svh; }
 }
+
+/* 3asy-protect */
+.preview-mark{position:fixed;right:max(12px,env(safe-area-inset-right,0px));bottom:max(12px,env(safe-area-inset-bottom,0px));z-index:28;margin:0;padding:.32rem .75rem;border-radius:999px;background:rgba(15,47,42,.72);color:var(--reed,#dfe7cc);font-family:var(--body,inherit);font-size:.6875rem;font-weight:500;letter-spacing:.01em;line-height:1.3;opacity:.9;pointer-events:none;max-width:min(24rem,calc(100vw - 24px));white-space:nowrap;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+@media(max-width:420px){.preview-mark{white-space:normal;text-align:right;font-size:.62rem;padding:.28rem .6rem}}
+.hero::after,.walk-stage::before,.plate-stage::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-family:var(--body,inherit);font-size:clamp(.75rem,2vw,1.05rem);font-weight:600;letter-spacing:.08em;white-space:nowrap;opacity:.16;pointer-events:none;z-index:3;color:var(--reed,#dfe7cc)}
+.hero{position:relative}
+.hero::after{top:28%;color:var(--pond,#0f2f2a);opacity:.14}
+.plate-stage{position:relative}
+.foot-below{padding-bottom:2.4rem}.rights{grid-column:1/-1;margin:.4rem 0 0;opacity:.9;font-size:var(--s0,.75rem)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"The Pond Cafe","telephone":"+441622357880","servesCuisine":"Breakfast and brunch","address":{"@type":"PostalAddress","streetAddress":"Tyland Barn, Chatham Road","addressLocality":"Sandling, Maidstone","postalCode":"ME14 3BD","addressCountry":"GB"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"16:00"},"hasMenu":"#menu"}
@@ -445,6 +454,7 @@ main, footer, .top { position: relative; }
       <ul><li><a href="#menu">Menu</a></li><li><a href="#ask">Questions</a></li><li><a href="#visit">Visit</a></li></ul>
       <ul><li><a href="https://www.kentwildlifetrust.org.uk/" target="_blank" rel="noopener">Kent Wildlife Trust</a></li><li><a href="https://www.instagram.com/the.pondattylandbarn/" target="_blank" rel="noopener">Instagram</a></li></ul>
       <p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with The Pond Cafe. Not affiliated with or endorsed by The Pond Cafe or Kent Wildlife Trust. Menu and prices are from the café’s own menu on Instagram. Photographs are Google Maps contributor images, used for this private demo only, and the walkthrough is generated from them with Higgsfield.</p>
+      <p class="rights">© 2026 3asy Design. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -758,5 +768,6 @@ main, footer, .top { position: relative; }
   lazy.forEach((el) => bgIO.observe(el));
 })();
 </script>
+<p class="preview-mark" aria-hidden="true">© 2026 3asy Design · concept preview · not licensed for use</p>
 </body>
 </html>

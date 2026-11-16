@@ -50,6 +50,13 @@ table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0
 .foot .legal{max-width:60rem}
 @media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}}
 .ph.vid{padding:0}.ph.vid::before{display:none}.ph.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.ph.vid span{position:absolute;left:.8rem;bottom:.8rem}
+
+/* 3asy-protect */
+.preview-mark{position:fixed;right:max(.6rem,env(safe-area-inset-right,0px));bottom:max(.6rem,env(safe-area-inset-bottom,0px));z-index:25;margin:0;padding:.32rem .7rem;border-radius:999px;background:var(--ink,#1a1a1a);color:#fff;font-family:inherit;font-size:.68rem;font-weight:500;letter-spacing:.01em;line-height:1.3;opacity:.55;pointer-events:none;max-width:min(24rem,calc(100vw - 1.4rem));white-space:nowrap}
+@media(max-width:420px){.preview-mark{white-space:normal;text-align:right;font-size:.62rem;padding:.28rem .6rem;line-height:1.35}}
+.ph::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-size:clamp(.7rem,2.2vw,1rem);font-weight:600;letter-spacing:.06em;white-space:nowrap;opacity:.18;pointer-events:none;z-index:2;color:var(--ink,#1a1a1a)}
+.ph.vid::after{color:#fff;opacity:.2}
+.rights{margin:.75rem 0 2.2rem}
 </style></head>
 <body>
 <p class="concept">Concept site, not the official site. Made for Leah&#x27;s Bistro by Ezekiel Luwoye, 3asy Design.</p>
@@ -78,7 +85,8 @@ table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0
 <p class="note" style="opacity:.7">Hours as listed on the business’s Google listing. To be confirmed with the business before launch.</p></div></div></section>
 </main>
 <footer class="foot"><p><b>Leah&#x27;s Bistro</b>, 18 High Street, Maidstone, Kent ME14 1HT</p>
-<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with Leah&#x27;s Bistro. Not affiliated with or endorsed by Leah&#x27;s Bistro. Details are taken from public listings and reviews and have not been confirmed with the business. The hero clip is animated from photos published on the business’s own website; it is a concept for discussion.</p></footer>
+<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with Leah&#x27;s Bistro. Not affiliated with or endorsed by Leah&#x27;s Bistro. Details are taken from public listings and reviews and have not been confirmed with the business. The hero clip is animated from photos published on the business’s own website; it is a concept for discussion.</p><p class="rights">© 2026 3asy Design. All rights reserved.</p>
+</footer>
 <script>
 (function(){
  var tabs=document.querySelectorAll('.tab');
@@ -98,4 +106,5 @@ table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0
  }catch(err){}
 })();
 </script>
+<p class="preview-mark" aria-hidden="true">© 2026 3asy Design · concept preview · not licensed for use</p>
 </body></html>

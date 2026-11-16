@@ -49,6 +49,13 @@ table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0
 .foot{padding:2rem clamp(1rem,5vw,4rem);font-size:.85rem;opacity:.85}
 .foot .legal{max-width:60rem}
 @media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}.btn.alt{margin-left:0;margin-top:.6rem}}
+
+/* 3asy-protect */
+.preview-mark{position:fixed;right:max(.6rem,env(safe-area-inset-right,0px));bottom:max(.6rem,env(safe-area-inset-bottom,0px));z-index:25;margin:0;padding:.32rem .7rem;border-radius:999px;background:var(--ink,#1a1a1a);color:#fff;font-family:inherit;font-size:.68rem;font-weight:500;letter-spacing:.01em;line-height:1.3;opacity:.55;pointer-events:none;max-width:min(24rem,calc(100vw - 1.4rem));white-space:nowrap}
+@media(max-width:420px){.preview-mark{white-space:normal;text-align:right;font-size:.62rem;padding:.28rem .6rem;line-height:1.35}}
+.ph::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-size:clamp(.7rem,2.2vw,1rem);font-weight:600;letter-spacing:.06em;white-space:nowrap;opacity:.18;pointer-events:none;z-index:2;color:var(--ink,#1a1a1a)}
+.ph.vid::after{color:#fff;opacity:.2}
+.rights{margin:.75rem 0 2.2rem}
 </style></head>
 <body>
 <p class="concept">Concept site, not the official site. Made for Dontev Hair by Ezekiel Luwoye, 3asy Design.</p>
@@ -74,7 +81,8 @@ table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0
 <p class="note" style="opacity:.7">These times are from the contact page. The homepage currently lists slightly different hours (Tuesday 10:00am–8:00pm, Wednesday 9:00am–4:30pm, Thursday 9:30am–8:00pm, Friday 8:00am–5:30pm). Both would be checked with you before anything went live. Sunday is not listed on either page.</p></div></div></section>
 </main>
 <footer class="foot"><p><b>Dontev Hair</b>, Parkfield House, Unit 3, Loudon Way, Godinton Park, Ashford, Kent TN23 3JJ</p>
-<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with Dontev Hair. Not affiliated with or endorsed by Dontev Hair. Details are taken from public listings and the business’s own website and have not been confirmed with the business. Photo areas are placeholders: a real site would use the business’s own photographs.</p></footer>
+<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with Dontev Hair. Not affiliated with or endorsed by Dontev Hair. Details are taken from public listings and the business’s own website and have not been confirmed with the business. Photo areas are placeholders: a real site would use the business’s own photographs.</p><p class="rights">© 2026 3asy Design. All rights reserved.</p>
+</footer>
 
 <script>
 (function(){
@@ -84,4 +92,5 @@ table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0
   t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false})});
 })();
 </script>
+<p class="preview-mark" aria-hidden="true">© 2026 3asy Design · concept preview · not licensed for use</p>
 </body></html>
