@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>True Hairdressing: a website concept by Ezekiel Luwoye, 3asy Design</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A website concept made for True Hairdressing by Ezekiel Luwoye, 3asy Design. Not the official site.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F1EC;--ink:#1F1A17;--accent:#7A2E2A;--accent2:#E4C9B2;--soft:#EFE4DA}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.5}
+a{color:inherit}
+.concept{position:sticky;top:0;z-index:20;margin:0;padding:.55rem 1rem;background:var(--ink);color:#fff;font-size:.82rem;text-align:center}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,5vw,4rem)}
+.bar b{font-weight:800;letter-spacing:-.01em;font-size:1.1rem}
+.bar nav a{margin-left:1.2rem;text-decoration:none;font-size:.95rem;opacity:.85}
+.hero{padding:clamp(2rem,7vw,6rem) clamp(1rem,5vw,4rem) clamp(2rem,5vw,4rem);display:grid;gap:2rem;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2.4rem,7.2vw,5.8rem);line-height:.95;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.03em}
+.hero p{font-size:1.15rem;max-width:34rem;margin:0 0 1.6rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:.6rem}
+.ph{position:relative;border-radius:24px;min-height:260px;background:linear-gradient(135deg,var(--accent2),var(--soft));display:flex;align-items:flex-end;padding:1rem;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.55),transparent 55%)}
+.ph span{position:relative;font-size:.8rem;opacity:.75;background:rgba(255,255,255,.7);padding:.25rem .6rem;border-radius:999px}
+.hero .ph{min-height:clamp(260px,40vw,460px)}
+section{padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,4rem)}
+h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.02em}
+.services{background:var(--soft)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.tab{border:2px solid var(--ink);background:transparent;color:var(--ink);padding:.55rem 1rem;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:#fff}
+.panel[hidden]{display:none}
+.group h3{margin:1.5rem 0 .2rem;font-size:1.4rem}.group>p{margin:0 0 .8rem;opacity:.75;font-size:.95rem}
+.rows{list-style:none;padding:0;margin:0;max-width:60rem}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:.1rem 1rem;padding:.8rem 0;border-bottom:1px solid rgba(0,0,0,.12)}
+.rows .dish{font-weight:700}.rows .price{font-weight:800;color:var(--accent)}.rows .desc{grid-column:1/-1;opacity:.8;font-size:.95rem}
+.note{max-width:60rem;font-size:.92rem;opacity:.8;margin-top:1.5rem}
+.reviews{display:grid;gap:2rem;grid-template-columns:.8fr 1.2fr}
+.score{font-size:clamp(3.2rem,10vw,6.4rem);font-weight:800;line-height:.9;color:var(--accent)}
+blockquote{margin:0 0 1.6rem;font-size:1.25rem;line-height:1.35}
+blockquote cite{display:block;font-style:normal;font-size:.88rem;opacity:.7;margin-top:.3rem}
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--soft);border-radius:22px;padding:1.6rem}
+.card h3{margin:0 0 .5rem;font-size:1.4rem}.card small{opacity:.65}
+.visit{background:var(--ink);color:#fff}.visit a{color:#fff}
+.visit .grid{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.status{display:inline-block;background:var(--accent2);color:var(--ink);padding:.3rem .8rem;border-radius:999px;font-weight:700;margin-bottom:1rem}
+table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0;font-weight:600}td{padding:.35rem 0}
+.foot{padding:2rem clamp(1rem,5vw,4rem);font-size:.85rem;opacity:.85}
+.foot .legal{max-width:60rem}
+@media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}.btn.alt{margin-left:0;margin-top:.6rem}}
+</style></head>
+<body>
+<p class="concept">Concept site, not the official site. Made for True Hairdressing by Ezekiel Luwoye, 3asy Design.</p>
+<header class="bar"><b>True Hairdressing</b><nav><a href="#services">Prices</a><a href="#visit">Visit</a></nav></header>
+<main>
+<section class="hero" id="top"><div><h1>Hairdressing in<br>Gravesend,<br>since 2001</h1><p>A family salon on Gravesend High Street, set over two floors, with complimentary drinks, Wella colour, Beauty Works tape extensions, and a team trained by Phil, Jane and Jade Hales.</p><a class="btn" href="#services">See the prices</a><a class="btn alt" href="tel:+441474356999">Call 01474 356999</a><a class="btn alt" href="https://ibookings.salonmanageronline.com/Truehairdressing">Book an appointment</a></div>
+<div class="ph" role="img" aria-label="Placeholder for the business's own photo"><span>Your own photo goes here</span></div></section>
+
+<section class="services" id="services"><h2>Hair prices</h2>
+<div class="tabs" role="tablist" aria-label="Service sections"><button class="tab" type="button" role="tab" id="tab0" aria-controls="p0" aria-selected="true">Cutting &amp; blow-drying</button><button class="tab" type="button" role="tab" id="tab1" aria-controls="p1" aria-selected="false">Colour</button><button class="tab" type="button" role="tab" id="tab2" aria-controls="p2" aria-selected="false">Treatments &amp; extensions</button></div><div class="panel" role="tabpanel" id="p0" aria-labelledby="tab0"><div class="group"><h3>Cutting and blow-drying menu</h3><p>Prices as published on the salon’s April 2026 pricing menu (True-Price-list-060426). The menu is arranged by stylist tier: Director, Advanced, Senior and Stylist.</p><ul class="rows"><li><span class="dish">Short hair</span><span class="price">£53.60–£77.60</span><span class="desc">Stylist £53.60, Senior £64.40, Advanced £70.30, Director £77.60.</span></li><li><span class="dish">Long hair</span><span class="price">£59.60–£82.40</span><span class="desc">Stylist £59.60, Senior £70.30, Advanced £76.40, Director £82.40.</span></li><li><span class="dish">Men</span><span class="price">£37.75–£44.10</span><span class="desc">Stylist £37.75, Senior £41.70, Advanced and Director £44.10.</span></li><li><span class="dish">Blow dry, short</span><span class="price">£41.70–£43.50</span><span class="desc">Stylist and Senior £41.70, Advanced and Director £43.50.</span></li><li><span class="dish">Blow dry, long</span><span class="price">£42.70–£50.00</span><span class="desc">Stylist and Senior £42.70, Advanced and Director £50.00.</span></li><li><span class="dish">Boys cut and style (5–13)</span><span class="price">£37.75</span><span class="desc">The same price is listed across all tiers.</span></li><li><span class="dish">Girls cut and style (5–13)</span><span class="price">£50.00</span><span class="desc">The same price is listed across all tiers.</span></li><li><span class="dish">Young cut and style (0–4)</span><span class="price">£30.60</span><span class="desc">The same price is listed across all tiers.</span></li></ul></div></div><div class="panel" role="tabpanel" id="p1" aria-labelledby="tab1" hidden><div class="group"><h3>Colour menu</h3><p>The colour menu lists Advanced, Senior and Stylist prices. A Director column is not shown on this part of the April 2026 menu.</p><ul class="rows"><li><span class="dish">Total colour, short</span><span class="price">£59.10–£65.20</span><span class="desc">Senior and Stylist £59.10, Advanced £65.20.</span></li><li><span class="dish">Total colour, long</span><span class="price">£71.60–£77.60</span><span class="desc">Senior and Stylist £71.60, Advanced £77.60.</span></li><li><span class="dish">Re-growth</span><span class="price">£49.20–£55.10</span><span class="desc">Senior and Stylist £49.20, Advanced £55.10.</span></li><li><span class="dish">Highlights, full</span><span class="price">£121.40–£127.60</span><span class="desc">Senior and Stylist £121.40, Advanced £127.60.</span></li><li><span class="dish">Highlights, half</span><span class="price">£83.60–£89.70</span><span class="desc">Senior and Stylist £83.60, Advanced £89.70.</span></li><li><span class="dish">Parting</span><span class="price">£49.10–£55.10</span><span class="desc">Senior and Stylist £49.10, Advanced £55.10.</span></li><li><span class="dish">Bespoke colouring</span><span class="price">From £68.10 an hour</span><span class="desc">Senior and Stylist from £68.10 an hour, Advanced from £74.00 an hour.</span></li></ul></div></div><div class="panel" role="tabpanel" id="p2" aria-labelledby="tab2" hidden><div class="group"><h3>Conditioning care and extensions</h3><p>Treatments as listed on the April 2026 menu. Beauty Works Slimline tape extensions are described on the salon page; a price is not printed on the public menu.</p><ul class="rows"><li><span class="dish">Intense treatments</span><span class="price">From £19.90</span></li><li><span class="dish">Wella Plex strengthening</span><span class="price">£35.50</span></li><li><span class="dish">Beauty Works Slimline tape extensions</span><span class="price"></span><span class="desc">The salon describes these as 100% human hair, with expert colour matching and a safe application. Ask the salon for a quote.</span></li><li><span class="dish">Bridal service</span><span class="price"></span><span class="desc">Listed among the salon’s services on the homepage.</span></li></ul></div></div>
+<p class="note">Taken from the salon’s April 2026 pricing menu. The menu itself says pricing is a starting point and may change to reflect the premium care and products used. The menu also describes the colour team as “5-star-rated colour experts”; that wording is the salon’s own, not a review count I have checked.</p></section>
+
+
+
+<section><div class="cards"><div class="card"><h3>A family salon since 2001</h3><p>True Hairdressing was started by Phil and Jane Hales, with their daughter Jade part of the team. Phil’s about page notes a British Hairdressing Awards finals place in 1995, and Jade is described as a Wella Master Colour Expert.</p><small>From the salon’s About True page.</small></div><div class="card"><h3>The salon experience</h3><p>Set over two floors, with comfortable seating, complimentary Nespresso coffee, teas and spring water, magazines, and music. Colour and care products are described as Wella, including System Professional, plus Nioxin and Sebastian. Allergy testing is taken seriously.</p><small>From The Hair Salon page.</small></div><div class="card"><h3>Book online</h3><p>Appointments can be booked through the salon’s Salon Manager booking page, or by calling or emailing the High Street salon.</p><small>Booking link published on the official site.</small></div></div></section>
+
+<section class="visit" id="visit"><div class="grid"><div><h2>Visit the salon</h2><p class="status" id="status">Closed Monday and Tuesday</p>
+<address style="font-style:normal">83 High Street, Heritage Quarter, Gravesend, Kent DA11 0BH</address>
+<p><a href="tel:+441474356999"><b>01474 356999</b></a><br>Email: <a href="mailto:info@truehairdressing.co.uk">info@truehairdressing.co.uk</a></p>
+
+<a class="btn" style="background:var(--accent2);color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=True+Hairdressing+83+High+Street,+Heritage+Quarter,+Gravesend,+Kent+DA11+0BH" target="_blank" rel="noopener">Get directions</a></div>
+<div><h2>Opening hours</h2><table><caption class="visually-hidden" style="position:absolute;left:-9999px">Opening hours</caption><tbody><tr><th scope="row">Monday</th><td>Closed</td></tr><tr><th scope="row">Tuesday</th><td>Closed</td></tr><tr><th scope="row">Wednesday</th><td>9:30am–8:00pm</td></tr><tr><th scope="row">Thursday</th><td>9:30am–8:00pm</td></tr><tr><th scope="row">Friday</th><td>9:30am–6:00pm</td></tr><tr><th scope="row">Saturday</th><td>9:00am–4:30pm</td></tr><tr><th scope="row">Sunday</th><td>Closed</td></tr></tbody></table>
+<p class="note" style="opacity:.7">Hours as published on the official website in November 2026.</p></div></div></section>
+</main>
+<footer class="foot"><p><b>True Hairdressing</b>, 83 High Street, Heritage Quarter, Gravesend, Kent DA11 0BH</p>
+<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with True Hairdressing. Not affiliated with or endorsed by True Hairdressing. Details are taken from public listings and the business’s own website and have not been confirmed with the business. Photo areas are placeholders: a real site would use the business’s own photographs.</p></footer>
+
+<script>
+(function(){
+ var tabs=document.querySelectorAll('.tab');
+ tabs.forEach(function(t){t.addEventListener('click',function(){
+  tabs.forEach(function(x){x.setAttribute('aria-selected','false');document.getElementById(x.getAttribute('aria-controls')).hidden=true});
+  t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false})});
+ var H={"1": null, "2": null, "3": [570, 1200], "4": [570, 1200], "5": [570, 1080], "6": [540, 990], "0": null};
+ try{
+  var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  var g=function(k){return p.filter(function(x){return x.type===k})[0].value};
+  var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')];
+  var m=parseInt(g('hour'))%24*60+parseInt(g('minute'));
+  var r=H[day];var open=false;
+  if(r){if(typeof r[0]==='number')r=[r];r.forEach(function(x){if(m>=x[0]&&m<x[1])open=true})}
+  var s=document.getElementById('status');
+  var extra="";
+  s.textContent=(open?'Open now':'Closed right now')+' · '+"Closed Monday and Tuesday"+(extra?' · '+extra:'');
+ }catch(err){}
+})();
+</script>
+</body></html>
