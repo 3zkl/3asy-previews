@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luxfords Hair and Beauty: a website concept by Ezekiel Luwoye, 3asy Design</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A website concept made for Luxfords Hair and Beauty by Ezekiel Luwoye, 3asy Design. Not the official site.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F1EA;--ink:#2C1A16;--accent:#8B3A3A;--accent2:#E6C9A8;--soft:#F0E4D6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.5}
+a{color:inherit}
+.concept{position:sticky;top:0;z-index:20;margin:0;padding:.55rem 1rem;background:var(--ink);color:#fff;font-size:.82rem;text-align:center}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,5vw,4rem)}
+.bar b{font-weight:800;letter-spacing:-.01em;font-size:1.1rem}
+.bar nav a{margin-left:1.2rem;text-decoration:none;font-size:.95rem;opacity:.85}
+.hero{padding:clamp(2rem,7vw,6rem) clamp(1rem,5vw,4rem) clamp(2rem,5vw,4rem);display:grid;gap:2rem;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2.4rem,7.2vw,5.8rem);line-height:.95;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.03em}
+.hero p{font-size:1.15rem;max-width:34rem;margin:0 0 1.6rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:.6rem}
+.ph{position:relative;border-radius:24px;min-height:260px;background:linear-gradient(135deg,var(--accent2),var(--soft));display:flex;align-items:flex-end;padding:1rem;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.55),transparent 55%)}
+.ph span{position:relative;font-size:.8rem;opacity:.75;background:rgba(255,255,255,.7);padding:.25rem .6rem;border-radius:999px}
+.hero .ph{min-height:clamp(260px,40vw,460px)}
+section{padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,4rem)}
+h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.02em}
+.services{background:var(--soft)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.tab{border:2px solid var(--ink);background:transparent;color:var(--ink);padding:.55rem 1rem;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:#fff}
+.panel[hidden]{display:none}
+.group h3{margin:1.5rem 0 .2rem;font-size:1.4rem}.group>p{margin:0 0 .8rem;opacity:.75;font-size:.95rem}
+.rows{list-style:none;padding:0;margin:0;max-width:60rem}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:.1rem 1rem;padding:.8rem 0;border-bottom:1px solid rgba(0,0,0,.12)}
+.rows .dish{font-weight:700}.rows .price{font-weight:800;color:var(--accent)}.rows .desc{grid-column:1/-1;opacity:.8;font-size:.95rem}
+.note{max-width:60rem;font-size:.92rem;opacity:.8;margin-top:1.5rem}
+.reviews{display:grid;gap:2rem;grid-template-columns:.8fr 1.2fr}
+.score{font-size:clamp(4rem,12vw,8rem);font-weight:800;line-height:.9;color:var(--accent)}
+blockquote{margin:0 0 1.6rem;font-size:1.25rem;line-height:1.35}
+blockquote cite{display:block;font-style:normal;font-size:.88rem;opacity:.7;margin-top:.3rem}
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--soft);border-radius:22px;padding:1.6rem}
+.card h3{margin:0 0 .5rem;font-size:1.4rem}.card small{opacity:.65}
+.visit{background:var(--ink);color:#fff}.visit a{color:#fff}
+.visit .grid{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.status{display:inline-block;background:var(--accent2);color:var(--ink);padding:.3rem .8rem;border-radius:999px;font-weight:700;margin-bottom:1rem}
+table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0;font-weight:600}td{padding:.35rem 0}
+.foot{padding:2rem clamp(1rem,5vw,4rem);font-size:.85rem;opacity:.85}
+.foot .legal{max-width:60rem}
+@media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}.btn.alt{margin-left:0;margin-top:.6rem}}
+</style></head>
+<body>
+<p class="concept">Concept site, not the official site. Made for Luxfords Hair and Beauty by Ezekiel Luwoye, 3asy Design.</p>
+<header class="bar"><b>Luxfords Hair and Beauty</b><nav><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav></header>
+<main>
+<section class="hero" id="top"><div><h1>Hair, beauty<br>and nails in Cheriton</h1><p>A hair and beauty salon on Firs Lane in Cheriton, Folkestone, with a dedicated treatment room and nail bar, complimentary drinks, and free salon parking.</p><a class="btn" href="#services">See the services</a><a class="btn alt" href="tel:+441303270633">Call 01303 270633</a></div>
+<div class="ph" role="img" aria-label="Placeholder for the business's own photo"><span>Your own photo goes here</span></div></section>
+
+<section class="services" id="services"><h2>Services</h2>
+<div class="tabs" role="tablist" aria-label="Service sections"><button class="tab" type="button" role="tab" id="tab0" aria-controls="p0" aria-selected="true">Hair</button><button class="tab" type="button" role="tab" id="tab1" aria-controls="p1" aria-selected="false">Beauty</button><button class="tab" type="button" role="tab" id="tab2" aria-controls="p2" aria-selected="false">Nails</button></div><div class="panel" role="tabpanel" id="p0" aria-labelledby="tab0"><div class="group"><h3>Hair by Luxfords</h3><p>The salon describes itself as an Olaplex salon and as experienced colour specialists. Every cut and colour service is said to include a personalised consultation.</p><ul class="rows"><li><span class="dish">Cut and styling</span><span class="price"></span><span class="desc">Styling, gents hair, hair-up and bridal hair, as listed on the salon’s about page.</span></li><li><span class="dish">Colouring</span><span class="price"></span><span class="desc">Colouring, creative colouring and colour correction.</span></li><li><span class="dish">Balayage</span><span class="price">From £55</span><span class="desc">Price as listed on the salon’s hair page.</span></li><li><span class="dish">Hair extensions</span><span class="price"></span><span class="desc">The salon asks you to get in touch for a quote.</span></li><li><span class="dish">Straightening and perming</span><span class="price"></span><span class="desc">Listed among the salon’s hair services.</span></li><li><span class="dish">Bridal hair and makeup</span><span class="price"></span><span class="desc">The salon offers bridal party hair and makeup packages, including a trial before the wedding day. It also mentions a makeup artist for bespoke wedding packages.</span></li></ul></div><div class="group"><h3>Add-on treatments</h3><p>These prices are as listed on the salon’s public hair page and would be confirmed before launch.</p><ul class="rows"><li><span class="dish">Nourishing hair mask</span><span class="price">£10</span></li><li><span class="dish">Glossing hair treatment</span><span class="price">£20</span></li><li><span class="dish">Olaplex treatment</span><span class="price">£25</span></li><li><span class="dish">Kerotin blow dry</span><span class="price">£150</span><span class="desc">Spelling and price as listed on the salon’s hair page.</span></li></ul></div></div><div class="panel" role="tabpanel" id="p1" aria-labelledby="tab1" hidden><div class="group"><h3>Beauty therapies</h3><p>Treatments from the salon’s experienced therapists, in a dedicated treatment room.</p><ul class="rows"><li><span class="dish">Holistic treatments</span><span class="price"></span><span class="desc">The beauty page describes holistic massage and facial treatments.</span></li><li><span class="dish">Waxing</span><span class="price"></span><span class="desc">Listed on the salon’s beauty page.</span></li><li><span class="dish">Tanning</span><span class="price"></span><span class="desc">Listed on the salon’s beauty page.</span></li><li><span class="dish">Massage</span><span class="price"></span><span class="desc">Listed on the salon’s beauty page. Guests also mention a massage chair at the wash basin.</span></li></ul></div></div><div class="panel" role="tabpanel" id="p2" aria-labelledby="tab2" hidden><div class="group"><h3>Nail bar</h3><p>Classic to artistic manicures and pedicures, including gels, at a dedicated nail bar.</p><ul class="rows"><li><span class="dish">Gel / Shellac manicure</span><span class="price">Coming soon</span><span class="desc">The public nails price list currently shows “Coming Soon”.</span></li><li><span class="dish">Gel / Shellac pedicure</span><span class="price">Coming soon</span></li><li><span class="dish">Gel / Shellac manicure and pedicure</span><span class="price">Coming soon</span></li><li><span class="dish">File and polish</span><span class="price">Coming soon</span></li><li><span class="dish">Luxury manicure</span><span class="price">Coming soon</span></li></ul></div></div>
+<p class="note">Services and the few published prices are taken from luxfords.salon (hair, beauty, nails and about pages) and have not been confirmed with the salon. A real site would add the full current price list and a way to book online, if the salon wanted that. Salon policy, as published: deposits are taken for all appointments (50% for new clients; £25 for an existing-client colour booking and £10 for a cut and style). Skin tests are required no later than 48 hours before colour and beauty treatments. Cancellations within 48 hours, and no-shows, are charged at 50% of the booking fee.</p></section>
+
+<section class="reviews" id="reviews"><div><h2>What guests say</h2><div class="score">4.9</div><p>out of 5 from 450 Google reviews</p></div>
+<div><blockquote><p>“Always have a great experience at Luxfords! They were extra accommodating this time by changing my appointment so that I could have more of a colour treatment than I originally booked! All the girls are so friendly and helpful — I love going there, it’s a real treat.”</p><cite>Google review, 9 March 2026</cite></blockquote><blockquote><p>“Such a lovely salon. I’ve been taking my elderly Mother here for the past few years and everyone is so kind and gentle with her. They remember us even though we may come only once or twice a year.”</p><cite>Google review, 7 February 2026</cite></blockquote><blockquote><p>“Had my first haircut with Becky here — going from mid length hair to something short. It was a great experience — she listened, and kept the technical jargon to a minimum. I’m thrilled with my new haircut.”</p><cite>Google review, 5 February 2026</cite></blockquote></div></section>
+
+<section><div class="cards"><div class="card"><h3>Complimentary drinks</h3><p>The salon offers a complimentary beverage with every service, and describes a fully licensed bar for guests aged 18 and over.</p><small>From the salon’s public website</small></div><div class="card"><h3>Free salon parking</h3><p>The contact page lists unlimited and free salon parking.</p><small>From luxfords.salon/contact-us</small></div><div class="card"><h3>All in one place</h3><p>Services, opening hours, phone, email and directions on one page that works on a phone, with space for a full price list and booking.</p><small>What a website can gather</small></div></div></section>
+
+<section class="visit" id="visit"><div class="grid"><div><h2>Find us</h2><p class="status" id="status">Mon 9am–5pm, Tue 9am–6pm, Wed–Thu 9am–8pm, Fri 9am–6pm, Sat 9am–3pm, Sun 10am–4pm</p>
+<address style="font-style:normal">Firs Lane, Cheriton, Folkestone, Kent CT19 4QE</address>
+<p><a href="tel:+441303270633"><b>01303 270633</b></a><br>Email: <a href="mailto:info@luxfords.salon">info@luxfords.salon</a></p>
+
+<a class="btn" style="background:var(--accent2);color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=Luxfords+Hair+and+Beauty+Firs+Lane,+Cheriton,+Folkestone,+Kent+CT19+4QE" target="_blank" rel="noopener">Get directions</a></div>
+<div><h2>Opening hours</h2><table><caption class="visually-hidden" style="position:absolute;left:-9999px">Opening hours</caption><tbody><tr><th scope="row">Monday</th><td>09:00 to 17:00</td></tr><tr><th scope="row">Tuesday</th><td>09:00 to 18:00</td></tr><tr><th scope="row">Wednesday</th><td>09:00 to 20:00</td></tr><tr><th scope="row">Thursday</th><td>09:00 to 20:00</td></tr><tr><th scope="row">Friday</th><td>09:00 to 18:00</td></tr><tr><th scope="row">Saturday</th><td>09:00 to 15:00</td></tr><tr><th scope="row">Sunday</th><td>10:00 to 16:00</td></tr></tbody></table>
+<p class="note" style="opacity:.7">Hours as listed on the salon’s website and Google listing. To be confirmed with the business before launch.</p></div></div></section>
+</main>
+<footer class="foot"><p><b>Luxfords Hair and Beauty</b>, Firs Lane, Cheriton, Folkestone, Kent CT19 4QE</p>
+<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with Luxfords Hair and Beauty. Not affiliated with or endorsed by Luxfords Hair and Beauty. Details are taken from public listings and reviews and have not been confirmed with the business. Photo areas are placeholders: a real site would use the business’s own photographs.</p></footer>
+<script>
+(function(){
+ var tabs=document.querySelectorAll('.tab');
+ tabs.forEach(function(t){t.addEventListener('click',function(){
+  tabs.forEach(function(x){x.setAttribute('aria-selected','false');document.getElementById(x.getAttribute('aria-controls')).hidden=true});
+  t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false})});
+ var H={"0": [600, 960], "1": [540, 1020], "2": [540, 1080], "3": [540, 1200], "4": [540, 1200], "5": [540, 1080], "6": [540, 900]};
+ try{
+  var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  var g=function(k){return p.filter(function(x){return x.type===k})[0].value};
+  var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')];
+  var m=parseInt(g('hour'))%24*60+parseInt(g('minute'));
+  var r=H[day];var open=false;
+  if(r){if(typeof r[0]==='number')r=[r];r.forEach(function(x){if(m>=x[0]&&m<x[1])open=true})}
+  var s=document.getElementById('status');
+  var extra="";
+  s.textContent=(open?'Open now':'Closed right now')+' · '+"Mon 9am\u20135pm, Tue 9am\u20136pm, Wed\u2013Thu 9am\u20138pm, Fri 9am\u20136pm, Sat 9am\u20133pm, Sun 10am\u20134pm"+(extra?' · '+extra:'');
+ }catch(err){}
+})();
+</script>
+</body></html>
