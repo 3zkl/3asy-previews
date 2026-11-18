@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medway Plumbing: a website concept by Ezekiel Luwoye, 3asy Design</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A website concept made for Medway Plumbing by Ezekiel Luwoye, 3asy Design. Not the official site.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F6FA;--ink:#0F2235;--accent:#1F6FB2;--accent2:#BFD9EE;--soft:#E3EDF6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.5}
+a{color:inherit}
+.concept{position:sticky;top:0;z-index:20;margin:0;padding:.55rem 1rem;background:var(--ink);color:#fff;font-size:.82rem;text-align:center}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,5vw,4rem)}
+.bar b{font-weight:800;letter-spacing:-.01em;font-size:1.1rem}
+.bar nav a{margin-left:1.2rem;text-decoration:none;font-size:.95rem;opacity:.85}
+.hero{padding:clamp(2rem,7vw,6rem) clamp(1rem,5vw,4rem) clamp(2rem,5vw,4rem);display:grid;gap:2rem;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2.4rem,7.2vw,5.8rem);line-height:.95;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.03em}
+.hero p{font-size:1.15rem;max-width:34rem;margin:0 0 1.6rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:.6rem}
+.ph{position:relative;border-radius:24px;min-height:260px;background:linear-gradient(135deg,var(--accent2),var(--soft));display:flex;align-items:flex-end;padding:1rem;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.55),transparent 55%)}
+.ph span{position:relative;font-size:.8rem;opacity:.75;background:rgba(255,255,255,.7);padding:.25rem .6rem;border-radius:999px}
+.hero .ph{min-height:clamp(260px,40vw,460px)}
+section{padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,4rem)}
+h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.02em}
+.services{background:var(--soft)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.tab{border:2px solid var(--ink);background:transparent;color:var(--ink);padding:.55rem 1rem;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:#fff}
+.panel[hidden]{display:none}
+.group h3{margin:1.5rem 0 .2rem;font-size:1.4rem}.group>p{margin:0 0 .8rem;opacity:.75;font-size:.95rem}
+.rows{list-style:none;padding:0;margin:0;max-width:60rem}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:.1rem 1rem;padding:.8rem 0;border-bottom:1px solid rgba(0,0,0,.12)}
+.rows .dish{font-weight:700}.rows .price{font-weight:800;color:var(--accent)}.rows .desc{grid-column:1/-1;opacity:.8;font-size:.95rem}
+.note{max-width:60rem;font-size:.92rem;opacity:.8;margin-top:1.5rem}
+.reviews{display:grid;gap:2rem;grid-template-columns:.8fr 1.2fr}
+.score{font-size:clamp(3.2rem,10vw,6.4rem);font-weight:800;line-height:.9;color:var(--accent)}
+blockquote{margin:0 0 1.6rem;font-size:1.25rem;line-height:1.35}
+blockquote cite{display:block;font-style:normal;font-size:.88rem;opacity:.7;margin-top:.3rem}
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--soft);border-radius:22px;padding:1.6rem}
+.card h3{margin:0 0 .5rem;font-size:1.4rem}.card small{opacity:.65}
+.visit{background:var(--ink);color:#fff}.visit a{color:#fff}
+.visit .grid{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.status{display:inline-block;background:var(--accent2);color:var(--ink);padding:.3rem .8rem;border-radius:999px;font-weight:700;margin-bottom:1rem}
+table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0;font-weight:600}td{padding:.35rem 0}
+.foot{padding:2rem clamp(1rem,5vw,4rem);font-size:.85rem;opacity:.85}
+.foot .legal{max-width:60rem}
+@media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}.btn.alt{margin-left:0;margin-top:.6rem}}
+
+
+/* 3asy-protect */
+.concept{display:flex;flex-direction:column;align-items:center;gap:.12rem;line-height:1.35}
+.concept .license{opacity:.72;font-size:.72rem;font-weight:500;letter-spacing:.02em}
+@media(max-width:420px){.concept{padding:.5rem .75rem;font-size:.78rem}.concept .license{font-size:.68rem}}
+.ph::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-size:clamp(.75rem,2.2vw,1.05rem);font-weight:600;letter-spacing:.06em;white-space:nowrap;pointer-events:none;z-index:3;color:rgba(255,255,255,.82);text-shadow:0 0 1px rgba(0,0,0,.5),0 1px 8px rgba(0,0,0,.35);opacity:.5}
+.rights{margin:.75rem 0 0}
+
+</style></head>
+<body>
+<p class="concept">Concept site, not the official site. Made for Medway Plumbing by Ezekiel Luwoye, 3asy Design.<span class="license">© 2026 3asy Design · concept preview · not licensed for use</span></p>
+<header class="bar"><b>Medway Plumbing</b><nav><a href="#services">Services</a><a href="#visit">Visit</a></nav></header>
+<main>
+<section class="hero" id="top"><div><h1>Plumbing, heating<br>and gas across<br>Medway &amp; Kent</h1><p>Gas Safe registered engineers for homes and businesses in the Medway Towns and across Kent: from a leaky tap or a boiler repair to a complete bathroom or a full heating system, with a 24-hour emergency callout.</p><a class="btn" href="#services">See the services</a><a class="btn alt" href="tel:+441634510069">Call 01634 510069</a></div>
+<div class="ph" role="img" aria-label="Placeholder for the business's own photo"><span>Your own photo goes here</span></div></section>
+
+<section class="services" id="services"><h2>What we do</h2>
+<div class="tabs" role="tablist" aria-label="Service sections"><button class="tab" type="button" role="tab" id="tab0" aria-controls="p0" aria-selected="true">Domestic</button><button class="tab" type="button" role="tab" id="tab1" aria-controls="p1" aria-selected="false">Commercial</button><button class="tab" type="button" role="tab" id="tab2" aria-controls="p2" aria-selected="false">Gas</button></div><div class="panel" role="tabpanel" id="p0" aria-labelledby="tab0"><div class="group"><h3>Domestic plumbing and heating</h3><p>Fully qualified and insured engineers. All work is guaranteed.</p><ul class="rows"><li><span class="dish">Boiler repair, servicing and installation</span><span class="price"></span><span class="desc">A range of boilers and controls to suit your home.</span></li><li><span class="dish">Complete bathroom installation</span><span class="price"></span><span class="desc">Including electrics and tiling.</span></li><li><span class="dish">Kitchen and bathroom installation</span><span class="price"></span></li><li><span class="dish">Unvented hot water cylinders and Megaflo</span><span class="price"></span></li><li><span class="dish">Power flushing and underfloor heating</span><span class="price"></span></li><li><span class="dish">Water and gas leak detection, burst pipes, blocked drains</span><span class="price"></span></li><li><span class="dish">Landlord and tenant services</span><span class="price"></span></li></ul></div></div><div class="panel" role="tabpanel" id="p1" aria-labelledby="tab1" hidden><div class="group"><h3>Commercial plumbing, heating and drainage</h3><p>For businesses, general contractors and builders across Kent.</p><ul class="rows"><li><span class="dish">Emergency plumbing and heating</span><span class="price"></span></li><li><span class="dish">Preventative maintenance plans</span><span class="price"></span><span class="desc">Designed around your systems to help avoid downtime.</span></li><li><span class="dish">Full heating and plumbing systems</span><span class="price"></span><span class="desc">For factories, offices and other premises.</span></li></ul></div></div><div class="panel" role="tabpanel" id="p2" aria-labelledby="tab2" hidden><div class="group"><h3>Gas Safe registered</h3><p>All gas installation and repair work, domestic and commercial.</p><ul class="rows"><li><span class="dish">Gas appliance installation</span><span class="price"></span></li><li><span class="dish">Gas pipe repairs, upgrades and replacements</span><span class="price"></span></li></ul></div></div>
+<p class="note">Services as listed on medwayplumbing.co.uk (domestic, commercial and about pages), checked November 2026. A real site would add photos of your own installations.</p></section>
+
+
+
+<section><div class="cards"><div class="card"><h3>Over 20 years</h3><p>A returning client base of large and small customers, from landlords and tenants to businesses and homeowners.</p><small>From the Medway Plumbing about page.</small></div><div class="card"><h3>Honest advice</h3><p>We only undertake work that is necessary to fix the problem, and all options are discussed with you first.</p><small>From the Medway Plumbing domestic page.</small></div><div class="card"><h3>24-hour emergency callout</h3><p>Locally based engineers who are never far away, day or night.</p><small>From the Medway Plumbing website.</small></div></div></section>
+
+<section class="visit" id="visit"><div class="grid"><div><h2>Get in touch</h2><p class="status" id="status">24-hour emergency callout</p>
+<address style="font-style:normal">52 King George Road, Chatham, Kent ME5 0TT</address>
+<p><a href="tel:+441634510069"><b>01634 510069</b></a><br>Also: <a href="tel:+447779031352">07779 031352</a><br>Email: <a href="mailto:info@medwayplumbing.co.uk">info@medwayplumbing.co.uk</a></p>
+
+<a class="btn" style="background:var(--accent2);color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=Medway+Plumbing+52+King+George+Road,+Chatham,+Kent+ME5+0TT" target="_blank" rel="noopener">Get directions</a></div>
+<div><h2>When to call</h2><table><caption class="visually-hidden" style="position:absolute;left:-9999px">Opening hours</caption><tbody><tr><th scope="row">Emergency callout</th><td>24 hours a day</td></tr><tr><th scope="row">Office</th><td>01634 510069</td></tr><tr><th scope="row">Mobile</th><td>07779 031352</td></tr></tbody></table>
+<p class="note" style="opacity:.7">Office hours aren&#x27;t published on the current site, so this would be confirmed with you.</p></div></div></section>
+</main>
+<footer class="foot"><p><b>Medway Plumbing</b>, 52 King George Road, Chatham, Kent ME5 0TT</p>
+<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with Medway Plumbing. Not affiliated with or endorsed by Medway Plumbing. Details are taken from public listings and the business’s own website and have not been confirmed with the business. Photo areas are placeholders: a real site would use the business’s own photographs.</p>
+<p class="rights">© 2026 3asy Design. All rights reserved.</p></footer>
+
+<script>
+(function(){
+ var tabs=document.querySelectorAll('.tab');
+ tabs.forEach(function(t){t.addEventListener('click',function(){
+  tabs.forEach(function(x){x.setAttribute('aria-selected','false');document.getElementById(x.getAttribute('aria-controls')).hidden=true});
+  t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false})});
+})();
+</script>
+</body></html>
