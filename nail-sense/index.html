@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nail Sense: a website concept by Ezekiel Luwoye, 3asy Design</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A website concept made for Nail Sense by Ezekiel Luwoye, 3asy Design. Not the official site.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FDF7F9;--ink:#2A1720;--accent:#C2185B;--accent2:#F7CFDD;--soft:#F8E8EE}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.5}
+a{color:inherit}
+.concept{position:sticky;top:0;z-index:20;margin:0;padding:.55rem 1rem;background:var(--ink);color:#fff;font-size:.82rem;text-align:center}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,5vw,4rem)}
+.bar b{font-weight:800;letter-spacing:-.01em;font-size:1.1rem}
+.bar nav a{margin-left:1.2rem;text-decoration:none;font-size:.95rem;opacity:.85}
+.hero{padding:clamp(2rem,7vw,6rem) clamp(1rem,5vw,4rem) clamp(2rem,5vw,4rem);display:grid;gap:2rem;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2.4rem,7.2vw,5.8rem);line-height:.95;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.03em}
+.hero p{font-size:1.15rem;max-width:34rem;margin:0 0 1.6rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:.6rem}
+.ph{position:relative;border-radius:24px;min-height:260px;background:linear-gradient(135deg,var(--accent2),var(--soft));display:flex;align-items:flex-end;padding:1rem;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.55),transparent 55%)}
+.ph span{position:relative;font-size:.8rem;opacity:.75;background:rgba(255,255,255,.7);padding:.25rem .6rem;border-radius:999px}
+.hero .ph{min-height:clamp(260px,40vw,460px)}
+section{padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,4rem)}
+h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.02em}
+.services{background:var(--soft)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.tab{border:2px solid var(--ink);background:transparent;color:var(--ink);padding:.55rem 1rem;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:#fff}
+.panel[hidden]{display:none}
+.group h3{margin:1.5rem 0 .2rem;font-size:1.4rem}.group>p{margin:0 0 .8rem;opacity:.75;font-size:.95rem}
+.rows{list-style:none;padding:0;margin:0;max-width:60rem}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:.1rem 1rem;padding:.8rem 0;border-bottom:1px solid rgba(0,0,0,.12)}
+.rows .dish{font-weight:700}.rows .price{font-weight:800;color:var(--accent)}.rows .desc{grid-column:1/-1;opacity:.8;font-size:.95rem}
+.note{max-width:60rem;font-size:.92rem;opacity:.8;margin-top:1.5rem}
+.reviews{display:grid;gap:2rem;grid-template-columns:.8fr 1.2fr}
+.score{font-size:clamp(3.2rem,10vw,6.4rem);font-weight:800;line-height:.9;color:var(--accent)}
+blockquote{margin:0 0 1.6rem;font-size:1.25rem;line-height:1.35}
+blockquote cite{display:block;font-style:normal;font-size:.88rem;opacity:.7;margin-top:.3rem}
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--soft);border-radius:22px;padding:1.6rem}
+.card h3{margin:0 0 .5rem;font-size:1.4rem}.card small{opacity:.65}
+.visit{background:var(--ink);color:#fff}.visit a{color:#fff}
+.visit .grid{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.status{display:inline-block;background:var(--accent2);color:var(--ink);padding:.3rem .8rem;border-radius:999px;font-weight:700;margin-bottom:1rem}
+table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0;font-weight:600}td{padding:.35rem 0}
+.foot{padding:2rem clamp(1rem,5vw,4rem);font-size:.85rem;opacity:.85}
+.foot .legal{max-width:60rem}
+@media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}.btn.alt{margin-left:0;margin-top:.6rem}}
+
+
+/* 3asy-protect */
+.concept{display:flex;flex-direction:column;align-items:center;gap:.12rem;line-height:1.35}
+.concept .license{opacity:.72;font-size:.72rem;font-weight:500;letter-spacing:.02em}
+@media(max-width:420px){.concept{padding:.5rem .75rem;font-size:.78rem}.concept .license{font-size:.68rem}}
+.ph::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-size:clamp(.75rem,2.2vw,1.05rem);font-weight:600;letter-spacing:.06em;white-space:nowrap;pointer-events:none;z-index:3;color:rgba(255,255,255,.82);text-shadow:0 0 1px rgba(0,0,0,.5),0 1px 8px rgba(0,0,0,.35);opacity:.5}
+.rights{margin:.75rem 0 0}
+
+</style></head>
+<body>
+<p class="concept">Concept site, not the official site. Made for Nail Sense by Ezekiel Luwoye, 3asy Design.<span class="license">© 2026 3asy Design · concept preview · not licensed for use</span></p>
+<header class="bar"><b>Nail Sense</b><nav><a href="#services">Services</a><a href="#visit">Visit</a></nav></header>
+<main>
+<section class="hero" id="top"><div><h1>Nails, from<br>classic to<br>stiletto</h1><p>A Walderslade beauty salon with 14 years of trading, specialising in nails from basic manicures to extravagant long stilettos, run by a team of enthusiastic, experienced technicians.</p><a class="btn" href="#services">See the treatments</a><a class="btn alt" href="tel:+441634682846">Call 01634 682846</a></div>
+<div class="ph" role="img" aria-label="Placeholder for the business's own photo"><span>Your own photo goes here</span></div></section>
+
+<section class="services" id="services"><h2>Treatments</h2>
+<div class="tabs" role="tablist" aria-label="Service sections"><button class="tab" type="button" role="tab" id="tab0" aria-controls="p0" aria-selected="true">Manicures</button><button class="tab" type="button" role="tab" id="tab1" aria-controls="p1" aria-selected="false">Pedicures</button></div><div class="panel" role="tabpanel" id="p0" aria-labelledby="tab0"><div class="group"><h3>Hands</h3><p></p><ul class="rows"><li><span class="dish">CND Shellac manicure</span><span class="price"></span></li><li><span class="dish">Manicures</span><span class="price"></span><span class="desc">From basic manicures to long stilettos.</span></li></ul></div></div><div class="panel" role="tabpanel" id="p1" aria-labelledby="tab1" hidden><div class="group"><h3>Feet</h3><p></p><ul class="rows"><li><span class="dish">Spa pedicure</span><span class="price"></span><span class="desc">In a heated massaging pedi-spa chair: a stress-relieving foot bath, cuticle clean-up, shaping, hard skin removal, exfoliating scrub, massage and polish of your choice.</span></li></ul></div></div>
+<p class="note">Treatments as listed on nailsense.co.uk. The price list would be added here as readable text once you confirm it.</p></section>
+
+
+
+<section><div class="cards"><div class="card"><h3>14 years</h3><p>Trading in Walderslade for 14 years.</p><small>From the Nail Sense website.</small></div><div class="card"><h3>Book online</h3><p>Online booking is live.</p><small>From the Nail Sense website.</small></div><div class="card"><h3>Saturday mornings</h3><p>Open from 8.45am on Saturdays.</p><small>From the Nail Sense contact page.</small></div></div></section>
+
+<section class="visit" id="visit"><div class="grid"><div><h2>Find us</h2><p class="status" id="status">Mon to Sat</p>
+<address style="font-style:normal">6 Sherwood House, Walderslade Road, Chatham, Kent ME5 9UD</address>
+<p><a href="tel:+441634682846"><b>01634 682846</b></a><br>Email: <a href="mailto:nailsense@hotmail.co.uk">nailsense@hotmail.co.uk</a></p>
+
+<a class="btn" style="background:var(--accent2);color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=Nail+Sense+6+Sherwood+House,+Walderslade+Road,+Chatham,+Kent+ME5+9UD" target="_blank" rel="noopener">Get directions</a></div>
+<div><h2>Opening hours</h2><table><caption class="visually-hidden" style="position:absolute;left:-9999px">Opening hours</caption><tbody><tr><th scope="row">Monday to Friday</th><td>9.30am to 6.30pm</td></tr><tr><th scope="row">Saturday</th><td>8.45am to 5.45pm</td></tr><tr><th scope="row">Sunday</th><td>Closed</td></tr></tbody></table>
+<p class="note" style="opacity:.7">Hours as listed on the Nail Sense contact page. Sunday isn&#x27;t listed, so it&#x27;s shown as closed until you confirm.</p></div></div></section>
+</main>
+<footer class="foot"><p><b>Nail Sense</b>, 6 Sherwood House, Walderslade Road, Chatham, Kent ME5 9UD</p>
+<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with Nail Sense. Not affiliated with or endorsed by Nail Sense. Details are taken from public listings and the business’s own website and have not been confirmed with the business. Photo areas are placeholders: a real site would use the business’s own photographs.</p>
+<p class="rights">© 2026 3asy Design. All rights reserved.</p></footer>
+
+<script>
+(function(){
+ var tabs=document.querySelectorAll('.tab');
+ tabs.forEach(function(t){t.addEventListener('click',function(){
+  tabs.forEach(function(x){x.setAttribute('aria-selected','false');document.getElementById(x.getAttribute('aria-controls')).hidden=true});
+  t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false})});
+ var H={"1": [570, 1110], "2": [570, 1110], "3": [570, 1110], "4": [570, 1110], "5": [570, 1110], "6": [525, 1065]};
+ try{
+  var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  var g=function(k){return p.filter(function(x){return x.type===k})[0].value};
+  var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')];
+  var m=parseInt(g('hour'))%24*60+parseInt(g('minute'));
+  var r=H[day];var open=false;
+  if(r){if(typeof r[0]==='number')r=[r];r.forEach(function(x){if(m>=x[0]&&m<x[1])open=true})}
+  var s=document.getElementById('status');
+  var extra="";
+  s.textContent=(open?'Open now':'Closed right now')+' · '+"Mon to Sat"+(extra?' · '+extra:'');
+ }catch(err){}
+})();
+</script>
+</body></html>

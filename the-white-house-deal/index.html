@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The White House: a website concept by Ezekiel Luwoye, 3asy Design</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A website concept made for The White House by Ezekiel Luwoye, 3asy Design. Not the official site.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAFAF7;--ink:#1E2422;--accent:#3F6B5C;--accent2:#D4E4DC;--soft:#EEF3F0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.5}
+a{color:inherit}
+.concept{position:sticky;top:0;z-index:20;margin:0;padding:.55rem 1rem;background:var(--ink);color:#fff;font-size:.82rem;text-align:center}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,5vw,4rem)}
+.bar b{font-weight:800;letter-spacing:-.01em;font-size:1.1rem}
+.bar nav a{margin-left:1.2rem;text-decoration:none;font-size:.95rem;opacity:.85}
+.hero{padding:clamp(2rem,7vw,6rem) clamp(1rem,5vw,4rem) clamp(2rem,5vw,4rem);display:grid;gap:2rem;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2.4rem,7.2vw,5.8rem);line-height:.95;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.03em}
+.hero p{font-size:1.15rem;max-width:34rem;margin:0 0 1.6rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:.6rem}
+.ph{position:relative;border-radius:24px;min-height:260px;background:linear-gradient(135deg,var(--accent2),var(--soft));display:flex;align-items:flex-end;padding:1rem;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,255,255,.55),transparent 55%)}
+.ph span{position:relative;font-size:.8rem;opacity:.75;background:rgba(255,255,255,.7);padding:.25rem .6rem;border-radius:999px}
+.hero .ph{min-height:clamp(260px,40vw,460px)}
+section{padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,4rem)}
+h2{font-size:clamp(2rem,5vw,3.6rem);line-height:1;margin:0 0 1.2rem;font-weight:800;letter-spacing:-.02em}
+.services{background:var(--soft)}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.tab{border:2px solid var(--ink);background:transparent;color:var(--ink);padding:.55rem 1rem;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:#fff}
+.panel[hidden]{display:none}
+.group h3{margin:1.5rem 0 .2rem;font-size:1.4rem}.group>p{margin:0 0 .8rem;opacity:.75;font-size:.95rem}
+.rows{list-style:none;padding:0;margin:0;max-width:60rem}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:.1rem 1rem;padding:.8rem 0;border-bottom:1px solid rgba(0,0,0,.12)}
+.rows .dish{font-weight:700}.rows .price{font-weight:800;color:var(--accent)}.rows .desc{grid-column:1/-1;opacity:.8;font-size:.95rem}
+.note{max-width:60rem;font-size:.92rem;opacity:.8;margin-top:1.5rem}
+.reviews{display:grid;gap:2rem;grid-template-columns:.8fr 1.2fr}
+.score{font-size:clamp(3.2rem,10vw,6.4rem);font-weight:800;line-height:.9;color:var(--accent)}
+blockquote{margin:0 0 1.6rem;font-size:1.25rem;line-height:1.35}
+blockquote cite{display:block;font-style:normal;font-size:.88rem;opacity:.7;margin-top:.3rem}
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--soft);border-radius:22px;padding:1.6rem}
+.card h3{margin:0 0 .5rem;font-size:1.4rem}.card small{opacity:.65}
+.visit{background:var(--ink);color:#fff}.visit a{color:#fff}
+.visit .grid{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.status{display:inline-block;background:var(--accent2);color:var(--ink);padding:.3rem .8rem;border-radius:999px;font-weight:700;margin-bottom:1rem}
+table{border-collapse:collapse}th{text-align:left;padding:.35rem 1.5rem .35rem 0;font-weight:600}td{padding:.35rem 0}
+.foot{padding:2rem clamp(1rem,5vw,4rem);font-size:.85rem;opacity:.85}
+.foot .legal{max-width:60rem}
+@media(max-width:760px){.hero,.reviews,.visit .grid{grid-template-columns:1fr}.bar nav a:not(:last-child){display:none}.btn.alt{margin-left:0;margin-top:.6rem}}
+
+
+/* 3asy-protect */
+.concept{display:flex;flex-direction:column;align-items:center;gap:.12rem;line-height:1.35}
+.concept .license{opacity:.72;font-size:.72rem;font-weight:500;letter-spacing:.02em}
+@media(max-width:420px){.concept{padding:.5rem .75rem;font-size:.78rem}.concept .license{font-size:.68rem}}
+.ph::after{content:"3asy Design · concept";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-22deg);font-size:clamp(.75rem,2.2vw,1.05rem);font-weight:600;letter-spacing:.06em;white-space:nowrap;pointer-events:none;z-index:3;color:rgba(255,255,255,.82);text-shadow:0 0 1px rgba(0,0,0,.5),0 1px 8px rgba(0,0,0,.35);opacity:.5}
+.rights{margin:.75rem 0 0}
+
+</style></head>
+<body>
+<p class="concept">Concept site, not the official site. Made for The White House by Ezekiel Luwoye, 3asy Design.<span class="license">© 2026 3asy Design · concept preview · not licensed for use</span></p>
+<header class="bar"><b>The White House</b><nav><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav></header>
+<main>
+<section class="hero" id="top"><div><h1>Hair and<br>beauty in<br>Deal</h1><p>A luxury hair and beauty salon less than five minutes&#x27; walk from Deal High Street: eight styling positions and a nail bar downstairs, two tranquil treatment rooms upstairs.</p><a class="btn" href="#services">See the treatments</a><a class="btn alt" href="tel:+441304389922">Call 01304 389922</a></div>
+<div class="ph" role="img" aria-label="Placeholder for the business's own photo"><span>Your own photo goes here</span></div></section>
+
+<section class="services" id="services"><h2>Treatments</h2>
+<div class="tabs" role="tablist" aria-label="Service sections"><button class="tab" type="button" role="tab" id="tab0" aria-controls="p0" aria-selected="true">Hair</button><button class="tab" type="button" role="tab" id="tab1" aria-controls="p1" aria-selected="false">Nails</button><button class="tab" type="button" role="tab" id="tab2" aria-controls="p2" aria-selected="false">Packages</button></div><div class="panel" role="tabpanel" id="p0" aria-labelledby="tab0"><div class="group"><h3>Cutting</h3><p>Stylist / Designer / Master / Executive</p><ul class="rows"><li><span class="dish">Cut &amp; finish</span><span class="price">£48 / £54 / £58 / £64</span></li><li><span class="dish">Restyle cut &amp; finish</span><span class="price">£58 / £64 / £68 / £74</span></li><li><span class="dish">Curl Craft cut &amp; finish</span><span class="price">£68</span><span class="desc">Master.</span></li><li><span class="dish">Pre-school cut</span><span class="price">£22 / £24</span></li><li><span class="dish">Short hair blow-dry (30 mins)</span><span class="price">£30 / £32 / £34 / £36</span></li></ul></div></div><div class="panel" role="tabpanel" id="p1" aria-labelledby="tab1" hidden><div class="group"><h3>Manicures and pedicures</h3><p>Nail health first.</p><ul class="rows"><li><span class="dish">Gel manicure (no removal needed)</span><span class="price">£42</span></li><li><span class="dish">BIAB manicure (no removal or rebalance)</span><span class="price">£45</span><span class="desc">The nail technicians&#x27; personal favourite.</span></li><li><span class="dish">DesignEx Pro nail extensions</span><span class="price">£60</span></li><li><span class="dish">Gel toes (dry pedicure)</span><span class="price">£42</span></li><li><span class="dish">Signature pedicure</span><span class="price">£60</span></li></ul></div></div><div class="panel" role="tabpanel" id="p2" aria-labelledby="tab2" hidden><div class="group"><h3>Packages</h3><p></p><ul class="rows"><li><span class="dish">Hello Eyes</span><span class="price">£69</span><span class="desc">Brow lamination and a lash tint &amp; lift.</span></li><li><span class="dish">Wind Down Wednesday</span><span class="price">£59</span><span class="desc">Express facial and a back, neck and shoulder massage.</span></li><li><span class="dish">The Little Miss (ages 7 to 15)</span><span class="price">£50</span><span class="desc">Mini manicure, mini pedicure, mini facial, and hot chocolate &amp; cookies.</span></li></ul></div></div>
+<p class="note">A selection of treatments and prices from thewhitehousekent.co.uk, checked 23 November 2026. Beauty, body, eyes, waxing and face menus would sit in their own tabs.</p></section>
+
+<section class="reviews" id="reviews"><div><h2>What clients say</h2></div><div><blockquote><p>Everyone was welcoming and very helpful, hygiene was top notch, and the stylists were great listeners.</p><cite>Stacey (from The White House website)</cite></blockquote><blockquote><p>The stylists always spend time with the client to make sure that they understand what is wanted.</p><cite>Karen (from The White House website)</cite></blockquote><blockquote><p>Fabulous hair cut by a Fabulous hairdresser.</p><cite>Sheila (from The White House website)</cite></blockquote></div></section>
+
+<section><div class="cards"><div class="card"><h3>November offer</h3><p>A 2-in-1 treatment: a revitalising facial and a hand treatment with massage.</p><small>From The White House homepage.</small></div><div class="card"><h3>Upstairs rooms</h3><p>Two treatment rooms on the first floor, with no lift, so please ask if stairs are a problem.</p><small>From The White House about page.</small></div><div class="card"><h3>Parking</h3><p>On-street parking nearby; allow time to find a space.</p><small>From The White House about page.</small></div></div></section>
+
+<section class="visit" id="visit"><div class="grid"><div><h2>Visit us</h2><p class="status" id="status">Tue to Sat, late Wednesdays</p>
+<address style="font-style:normal">28 Victoria Road, Deal, Kent CT14 7BH</address>
+<p><a href="tel:+441304389922"><b>01304 389922</b></a><br>Email: <a href="mailto:info@thewhitehousekent.co.uk">info@thewhitehousekent.co.uk</a></p>
+
+<a class="btn" style="background:var(--accent2);color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=The+White+House+28+Victoria+Road,+Deal,+Kent+CT14+7BH" target="_blank" rel="noopener">Get directions</a></div>
+<div><h2>Opening hours</h2><table><caption class="visually-hidden" style="position:absolute;left:-9999px">Opening hours</caption><tbody><tr><th scope="row">Monday</th><td>Closed</td></tr><tr><th scope="row">Tuesday</th><td>9am to 5pm</td></tr><tr><th scope="row">Wednesday</th><td>9am to 7pm</td></tr><tr><th scope="row">Thursday</th><td>9am to 5pm</td></tr><tr><th scope="row">Friday</th><td>9am to 5pm</td></tr><tr><th scope="row">Saturday</th><td>9am to 5pm</td></tr><tr><th scope="row">Sunday</th><td>Closed</td></tr></tbody></table>
+<p class="note" style="opacity:.7">Hours as listed on thewhitehousekent.co.uk.</p></div></div></section>
+</main>
+<footer class="foot"><p><b>The White House</b>, 28 Victoria Road, Deal, Kent CT14 7BH</p>
+<p class="legal">A concept site by Ezekiel Luwoye, 3asy Design (3asydesign.info@gmail.com), made to discuss with The White House. Not affiliated with or endorsed by The White House. Details are taken from public listings and the business’s own website and have not been confirmed with the business. Photo areas are placeholders: a real site would use the business’s own photographs.</p>
+<p class="rights">© 2026 3asy Design. All rights reserved.</p></footer>
+
+<script>
+(function(){
+ var tabs=document.querySelectorAll('.tab');
+ tabs.forEach(function(t){t.addEventListener('click',function(){
+  tabs.forEach(function(x){x.setAttribute('aria-selected','false');document.getElementById(x.getAttribute('aria-controls')).hidden=true});
+  t.setAttribute('aria-selected','true');document.getElementById(t.getAttribute('aria-controls')).hidden=false})});
+ var H={"2": [540, 1020], "3": [540, 1140], "4": [540, 1020], "5": [540, 1020], "6": [540, 1020]};
+ try{
+  var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  var g=function(k){return p.filter(function(x){return x.type===k})[0].value};
+  var day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')];
+  var m=parseInt(g('hour'))%24*60+parseInt(g('minute'));
+  var r=H[day];var open=false;
+  if(r){if(typeof r[0]==='number')r=[r];r.forEach(function(x){if(m>=x[0]&&m<x[1])open=true})}
+  var s=document.getElementById('status');
+  var extra="";
+  s.textContent=(open?'Open now':'Closed right now')+' · '+"Tue to Sat, late Wednesdays"+(extra?' · '+extra:'');
+ }catch(err){}
+})();
+</script>
+</body></html>
